@@ -1,3 +1,4 @@
+
 header, footer{
 	background-color:#FFA500;
 }
@@ -19,6 +20,7 @@ header li{
 
 .container-fluid li{
 	padding-top: 5px;
+	text-align: center;
 }
 .container-fluid img{
 	height: 60px;
@@ -81,7 +83,7 @@ article p, li{
 }
 
 #forms > div{
-	width: 50%;
+	width: 80%;
 }
 
 footer{
@@ -95,7 +97,14 @@ footer{
 	float:right;
 }
 
-.produto:hover{
-	box-shadow: 10px 10px 5px #888888;
-	transform-origin: bottom left;
+@media (min-width: 600px){
+	#forms > div{
+		max-width: 50%;
+	}
+}
+
+@media (max-width: 800px){
+	#about{
+		display: inline;
+	}
 }
