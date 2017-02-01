@@ -1,3 +1,4 @@
+
 header, footer{
 	background-color:#FFA500;
 }
@@ -16,22 +17,16 @@ header li{
 	height: 100%;
 	font-size: 20px;
 }
-.container div{
-	padding-top: 10px;
-}
 
 .container-fluid li{
 	padding-top: 5px;
+	text-align: center;
 }
 .container-fluid img{
 	height: 60px;
 }
 
 
-.problemas div:hover{
-	box-shadow: 10px 10px 5px #888888;
-	transform-origin: bottom left;
-}
 
 section > img{
 	width: 100%;
@@ -50,20 +45,23 @@ article h2{
 }
 
 article h3{
-	/*font-family: "New Century Schoolbook";*/
+	
 	font-weight: bold;
 }
 
 article p, li{
 	font-size: 15px;
-	/*font-family: "Andale Mono", monospace;*/
 }
 
 #about, #forms {
 	background-color: #D3D3D3;
 	padding-bottom: 10px;
+	width: 100%;
 }
-
+.row{
+	margin-right: 0;
+	margin-left: 0;
+}
 #price h3, h2{
 	text-align: center;
 }
@@ -71,6 +69,7 @@ article p, li{
 #price{
 	background-color:#00FA9A;
 	padding-bottom: 50px;
+	width: 100%;
 
 }
 
@@ -84,7 +83,7 @@ article p, li{
 }
 
 #forms > div{
-	width: 50%;
+	width: 80%;
 }
 
 footer{
@@ -96,4 +95,16 @@ footer{
 	color:white;
 	font-size: 20px;
 	float:right;
+}
+
+@media (min-width: 600px){
+	#forms > div{
+		max-width: 50%;
+	}
+}
+
+@media (max-width: 800px){
+	#about{
+		display: inline;
+	}
 }
