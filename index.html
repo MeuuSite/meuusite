@@ -19,23 +19,9 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-
-	<script type="text/javascript">
-
-
-    function onFormSubmit() {
-        var toAddress = "bruno.idealencar@gmail.com";
-        var timestamp = ;
-        var answer = $("#descricao").val();
-        var subject = $("#email").val() + $("#nome").val();
-        var emailBody = "Sao Paulo, bnla bla de blablabla" + "\n\n" +
-                        "A resposta é: " + answer + "\n\n" +
-                        "Hora de envio: " + timestamp;
-        MailApp.sendEmail(toAddress, subject, emailBody);
-    }
-
-
-	</script>
+	<script type="text/javascript" src="js/script.js"></script>
+<script data-cfasync="false" type="text/javascript"
+ src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 </head>
 <body>
 	<header>
@@ -129,7 +115,7 @@
 		<section id="forms">
 			<div class="container">
 				<h2>Entre em contato conosco!</h2>
-				<form class="form-horizontal" action="javascript:void(onFormSubmit(this))">
+				<form class="form-horizontal" action="javascript:void(sendMail())" method="póst">
 					<div class="form-group">
 					    <label for="nome">Nome:</label>
 					    <input type="text" class="form-control" id="nome">
